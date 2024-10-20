@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .container {
+      display: flex;
+      align-items: flex-start;
+      height: 100vh;
+    }
+    .sidebar {
+      text-align: center;
+      width: 30%;
+    }
+    .content {
+      text-align: center;
+      width: 70%;
+    }
+    .separator {
+      width: 1px;
+      background-color: black;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="sidebar">
+    <h2>Sidebar</h2>
+    <span class="sidebar__text" style="display: none">Hello</span>
+    <span class="sidebar__loader">Loading...</span>
+  </div>
+  <div class="separator"></div>
+  <div class="content">
+    <h2>Content</h2>
+    <span class="content__text" style="display: none">Hello</span>
+    <span class="content__loader">Loading...</span>
+  </div>
+</div>
+<script type="module" src="src/components/app.js"></script>
+<script type="module" src="src/components/content.js"></script>
+<script type="module" src="src/components/sidebar.js"></script>
+</body>
+</html>
